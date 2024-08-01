@@ -1,6 +1,30 @@
-body {
-    font-family: sans-serif;
-    color: #ffff;
-    background-color: #2e002e;
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+li,
+figure,
+table,
+th,
+td,
+a {
+  margin: 10px;
+  padding: 10px;
 }
 
+body {
+    color: #ffff;
+    font-family: "Roboto Slab", serif;
+    background-color: #7f187f;
+}
+
+header {
+    text-align: center;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
