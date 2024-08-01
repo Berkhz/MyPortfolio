@@ -17,10 +17,13 @@ a {
 body {
     color: #ffff;
     font-family: "Roboto Slab", serif;
-    background-color: #7f187f;
+    background-color: #5a045a;
+    margin: 0;
+    padding: 0;
 }
 
 header {
+    background-color: black;
     text-align: center;
     display: flex;
 }
