@@ -1,4 +1,3 @@
-body,
 h1,
 h2,
 p,
@@ -12,22 +11,50 @@ td,
 a {
   margin: 10px;
   padding: 10px;
+  text-decoration: none;
+}
+
+div {
+    text-align: center;
+    align-items: center;
+    height: 25ch;
 }
 
 body {
-    color: #ffff;
     font-family: "Roboto Slab", serif;
-    background-color: #5a045a;
-    margin: 0;
+    background-color: #680e4b;
+    color: #ffff;
+    height: 100vh;
     padding: 0;
+    margin: 0;
 }
 
 header {
-    background-color: black;
+    background-color: #7c72a0;
     text-align: center;
     display: flex;
+    padding: 25px;
 }
 
 h1 {
     text-align: center;
+}
+
+.presentation {
+    background-color: #42033d;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutme {
+    background-color: #6D62DE;
+}
+
+.contact {
+    background-color: #7c238c;
+}
+
+svg {
+    height: 25px;
+    width: 100px;
 }
