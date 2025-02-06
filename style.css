@@ -22,15 +22,15 @@ div {
 
 body {
     font-family: "Roboto Slab", serif;
-    background-color: #680e4b;
-    color: #ffff;
+    background-color: #ffffff;
+    color: #000000;
     height: 100vh;
     padding: 0;
     margin: 0;
 }
 
 header {
-    background-color: #7c72a0;
+    background-color: #ffffff;
     text-align: center;
     display: flex;
     padding: 25px;
@@ -41,17 +41,17 @@ h1 {
 }
 
 .presentation {
-    background-color: #42033d;
+    background-color: #ffffff;
     padding: 0;
     margin: 0;
 }
 
 .aboutme {
-    background-color: #6D62DE;
+    background-color: #ffffff;
 }
 
 .contact {
-    background-color: #7c238c;
+    background-color: #ffffff;
 }
 
 svg {
