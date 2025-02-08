@@ -9,23 +9,45 @@ table,
 th,
 td,
 a {
-  margin: 10px;
-  padding: 10px;
-  text-decoration: none;
-  list-style-type: none;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 a {
     color: #FCFCFE;
+    padding: 10px;
 }
 
 div {
     text-align: center;
     align-items: center;
+    height: 30ch;
+}
+
+.presentation {
+    background-color: #FCFCFE;
+    height: 20ch;
+    padding: 0;
+    margin: 0;
+}
+
+.myhistory {
+    height: 25ch;
+}
+
+.myskills {
+    height: 25ch;
+}
+
+.contact {
     height: 25ch;
 }
 
 body {
+    display: block;
     font-family: "Roboto Slab", serif;
     background-color: #FCFCFE;
     color: #000000;
@@ -34,22 +56,23 @@ body {
     margin: 0;
 }
 
+ul {
+    height: 0;
+    padding: 0;
+    display: block;
+}
+
 header {
     color: #FCFCFE;
     background-color: #6F2BFC;
-    text-align: center;
     display: flex;
     padding: 25px;
 }
 
-h1 {
+h3 {
     text-align: center;
-}
-
-.presentation {
-    background-color: #FCFCFE;
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    height: 30px;
 }
 
 .aboutme {
@@ -58,7 +81,7 @@ h1 {
 
 svg {
     height: 25px;
-    width: 100px;
+    width: 50px;
 }
 
 footer {
