@@ -2,78 +2,276 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kauan H. Bertalha - Portfólio</title>
-  <link rel="icon" type="image/x-icon" href="img/codeman.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kauan Bertalha — Software Engineer</title>
+
+  <meta name="description" content="Kauan Bertalha — Engenheiro de Software e desenvolvedor full-stack com base em back-end .NET/C#. Experiência com PostgreSQL, Redis, Docker e React. Buscando carreira internacional remota." />
+  <meta name="author" content="Kauan Henrique Bertalha" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kauan Bertalha — Software Engineer" />
+  <meta property="og:description" content="Full-stack developer with a strong .NET / C# back-end foundation, building scalable multi-tenant SaaS with React. Open to international remote roles." />
+  <meta property="og:image" content="img/perfil.jpg" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="alternate icon" type="image/png" href="img/codeman.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="menu">
-    <img src="img/perfil.jpg" alt="Kauan Bertalha" class="foto-perfil">
-    <a href="#sobremim">Perfil</a>
-    <a href="#objetivo">Objetivo</a>
-    <a href="#carreira">Carreira</a>
-    <a href="#formacao">Formação</a>
-    <a href="#cursos">Cursos</a>
-    <a href="#projetos">Projetos</a>
-    <button onclick="toggleDarkMode()">🌙</button>
-    <button onclick="trocarIdioma()">🌍</button>
-  </nav>
+  <!-- Skip link for accessibility -->
+  <a href="#hero" class="skip-link" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <a href="#hero" class="brand">KB<span class="dot">.</span></a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#about" data-i18n="nav.about">Sobre</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#experience" data-i18n="nav.experience">Experiência</a>
+      <a href="#projects" data-i18n="nav.projects">Projetos</a>
+      <a href="#education" data-i18n="nav.education">Formação</a>
+      <a href="#contact" data-i18n="nav.contact">Contato</a>
+    </nav>
+
+    <div class="controls">
+      <button id="langToggle" class="ctrl" type="button" aria-label="Trocar idioma">
+        <span id="langLabel">EN</span>
+      </button>
+      <button id="themeToggle" class="ctrl" type="button" aria-label="Alternar tema">
+        <span id="themeIcon">🌙</span>
+      </button>
+    </div>
+  </header>
 
   <main>
-    <section id="sobremim" class="section">
-      <h1>Kauan Henrique Bertalha</h1>
-      <p>Estudante de Engenharia de Software atualmente no 8° semestre e programador Pleno.</p>
-      <p>Tenho experiência prática com desenvolvimento back-end utilizando C# e .NET, além de domínio em bancos de dados como Oracle e MySQL. Trabalho com versionamento usando Git/GitHub e aplico conceitos sólidos de lógica e boas práticas de programação no dia a dia.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/kauanbertalha/" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com/kauan.bertalha/" target="_blank">Instagram</a>
-        <a href="https://github.com/berkhz" target="_blank">GitHub</a>
-        <a href="Kauan_Bertalha_Curriculo.pdf" download target="_blank">Currículo</a>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Disponível para oportunidades remotas</p>
+        <h1>Kauan <span class="accent">Bertalha</span></h1>
+        <p class="role" data-i18n="hero.role">Engenheiro de Software · Desenvolvedor Full-stack</p>
+        <p class="lead" data-i18n="hero.lead">
+          Desenvolvo aplicações full-stack com base sólida em back-end — C# / .NET, PostgreSQL e Redis —
+          e front-end em React. Atualmente Desenvolvedor Pleno na Benner Sistemas, mirando uma carreira internacional.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#projects" data-i18n="hero.ctaProjects">Ver projetos</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaContact">Entrar em contato</a>
+        </div>
+        <div class="social-links" aria-label="Redes sociais">
+          <a href="https://www.linkedin.com/in/kauanbertalha/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/berkhz" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.instagram.com/kauan.bertalha/" target="_blank" rel="noopener">Instagram</a>
+          <a href="mailto:kauan.bertalha@icloud.com">Email</a>
+          <a href="Kauan_Bertalha_Curriculo.pdf" download data-i18n="hero.resume">Currículo ↓</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="img/perfil.jpg" alt="Foto de Kauan Bertalha" width="240" height="240" />
       </div>
     </section>
 
-    <section id="objetivo" class="section">
-      <h2>Objetivo Profissional</h2>
-      <p>Busco me consolidar como desenvolvedor back-end e evoluir constantemente na área de engenharia de software. Meu objetivo é trabalhar remotamente com equipes internacionais, entregando soluções robustas, escaláveis e com alto padrão técnico.</p>
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2 class="section-title"><span class="num">01</span> <span data-i18n="about.title">Sobre mim</span></h2>
+      <div class="about-grid">
+        <div>
+          <p data-i18n="about.p1">
+            Sou formado em Engenharia de Software pela UniCesumar (diploma em emissão) e desenvolvedor Pleno.
+            Comecei a trabalhar aos 14 anos e nunca parei de aprender — hoje atuo com desenvolvimento
+            de sistemas em produção.
+          </p>
+          <p data-i18n="about.p2">
+            Minha base é o back-end — APIs limpas, banco bem modelado, autenticação segura e deploy
+            automatizado — e venho evoluindo como desenvolvedor full-stack, entregando também o front-end
+            em React. Também fundei a Alcateia Tecnologia, onde desenvolvo produtos próprios de ponta a ponta.
+          </p>
+        </div>
+        <ul class="facts">
+          <li><span class="fact-num">6+</span><span data-i18n="about.factYears">anos codando</span></li>
+          <li><span class="fact-num">.NET</span><span data-i18n="about.factStack">stack principal</span></li>
+          <li><span class="fact-num">SaaS</span><span data-i18n="about.factProd">em produção</span></li>
+        </ul>
+      </div>
     </section>
 
-    <section id="carreira" class="section">
-      <h2>Minha História</h2>
-      <p>Comecei a trabalhar com 14 anos, sempre aprendendo e evoluindo.</p>
-      <p>Sempre fui apaixonado por tecnologia e hoje atuo como desenvolvedor Pleno na Benner Sistemas, buscando uma carreira internacional.</p>
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h2 class="section-title"><span class="num">02</span> <span data-i18n="skills.title">Tecnologias</span></h2>
+      <div class="skills-groups">
+        <div class="skill-group">
+          <h3 data-i18n="skills.backend">Back-end</h3>
+          <div class="chips">
+            <span class="chip">C#</span><span class="chip">.NET 10</span><span class="chip">ASP.NET Minimal APIs</span>
+            <span class="chip">Entity Framework Core</span><span class="chip">JWT / Auth</span><span class="chip">Redis</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 data-i18n="skills.data">Banco de Dados</h3>
+          <div class="chips">
+            <span class="chip">PostgreSQL</span><span class="chip">Oracle</span><span class="chip">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 data-i18n="skills.frontend">Front-end</h3>
+          <div class="chips">
+            <span class="chip">React 19</span><span class="chip">TypeScript</span><span class="chip">HTML5 / CSS3</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 data-i18n="skills.devops">DevOps &amp; Tools</h3>
+          <div class="chips">
+            <span class="chip">Docker</span><span class="chip">Railway</span><span class="chip">Git / GitHub</span><span class="chip">.NET Aspire</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="formacao" class="section">
-      <h2>Formação Acadêmica</h2>
-      <p>Graduando em Engenharia de Software pela UniCesumar.</p>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal">
+      <h2 class="section-title"><span class="num">03</span> <span data-i18n="exp.title">Experiência</span></h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-head">
+              <h3 data-i18n="exp.bennerRole">Desenvolvedor Pleno</h3>
+              <span class="tl-org">Benner Sistemas</span>
+            </div>
+            <p data-i18n="exp.bennerDesc">
+              Desenvolvimento back-end de sistemas corporativos com C# / .NET e bancos Oracle,
+              aplicando boas práticas de código, versionamento e trabalho em equipe.
+            </p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-head">
+              <h3 data-i18n="exp.alcateiaRole">Fundador &amp; Desenvolvedor</h3>
+              <span class="tl-org">Alcateia Tecnologia</span>
+            </div>
+            <p data-i18n="exp.alcateiaDesc">
+              Iniciativa própria de tecnologia onde concebo e desenvolvo produtos de ponta a ponta —
+              da arquitetura ao deploy.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="cursos" class="section">
-      <h2>Cursos e Certificados</h2>
-      <ul>
-        <li><a href="http://cursos.alura.com.br/certificate/9afef65c-c705-4407-91ad-4864932d9104?lang" target="_blank">Git e GitHub – Alura</a></li>
-        <li><a href="https://cursos.alura.com.br/certificate/053c6b8f-0f91-45b7-875f-9191a7db33af" target="_blank">C#: Herança e Interfaces – Alura</a></li>
-        <li><a href="https://cursos.alura.com.br/certificate/18942583-7248-46d0-b774-747f83b5111c" target="_blank">C#: Bibliotecas .NET – Alura</a></li>
-        <li><a href="https://cursos.alura.com.br/certificate/2d6dd522-a2e8-4c4b-9c69-55c9c533edb7" target="_blank">C#: OO – Alura</a></li>
-        <li><a href="https://cursos.alura.com.br/certificate/44169145-c49c-4c04-92fb-11622114dee7" target="_blank">C#: Explorando a Linguagem – Alura</a></li>
-        <li><a href="https://www.udemy.com/certificate/UC-481d2fd6-d874-4815-9ce2-38a953b97e79/" target="_blank">Algoritmos e Lógica – Udemy</a></li>
-      </ul>
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2 class="section-title"><span class="num">04</span> <span data-i18n="proj.title">Projetos em destaque</span></h2>
+      <div class="projects">
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Velo</h3>
+            <span class="badge" data-i18n="proj.veloTag">SaaS · Full-stack</span>
+          </div>
+          <p data-i18n="proj.veloDesc">
+            Plataforma SaaS multi-tenant para gestão de oficinas mecânicas: ordens de serviço, financeiro,
+            controle de caixa, emissão de NFS-e e integração de pagamentos. Arquitetura de produção com
+            deploy automatizado.
+          </p>
+          <div class="chips small">
+            <span class="chip">.NET 10</span><span class="chip">PostgreSQL</span><span class="chip">React 19</span>
+            <span class="chip">Redis</span><span class="chip">Docker</span><span class="chip">Railway</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Alcateia Tecnologia</h3>
+            <span class="badge" data-i18n="proj.alcateiaTag">Produto próprio</span>
+          </div>
+          <p data-i18n="proj.alcateiaDesc">
+            Minha empresa de tecnologia — vitrine e base para os produtos que desenvolvo.
+          </p>
+          <div class="chips small">
+            <span class="chip">Web</span><span class="chip">TypeScript</span>
+          </div>
+          <div class="card-links">
+            <a href="https://alcateiatec.vercel.app" target="_blank" rel="noopener" data-i18n="proj.live">Site ↗</a>
+          </div>
+        </article>
+
+      </div>
+      <p class="more-repos">
+        <a href="https://github.com/berkhz" target="_blank" rel="noopener" data-i18n="proj.more">Ver todos os repositórios no GitHub ↗</a>
+      </p>
     </section>
 
-    <section id="projetos" class="section">
-      <h2>Projetos</h2>
-      <p>Participo ativamente de projetos pessoais e profissionais, com foco em soluções web e integrações de sistemas. A maioria dos meus projetos estão disponíveis no GitHub, onde compartilho códigos, estudos e experimentos.</p>
-      <a href="https://github.com/berkhz" target="_blank">Ver repositórios no GitHub</a>
+    <!-- EDUCATION + CERTS -->
+    <section id="education" class="section reveal">
+      <h2 class="section-title"><span class="num">05</span> <span data-i18n="edu.title">Formação &amp; Certificados</span></h2>
+      <div class="edu-grid">
+        <div>
+          <h3 data-i18n="edu.acadTitle">Formação Acadêmica</h3>
+          <p class="edu-degree" data-i18n="edu.degree">Bacharelado em Engenharia de Software</p>
+          <p class="edu-school">UniCesumar · <span data-i18n="edu.inprogress">concluído · aguardando diploma</span></p>
+        </div>
+        <div>
+          <h3 data-i18n="edu.certsTitle">Certificados</h3>
+          <ul class="certs">
+            <li><a href="https://www.udemy.com/certificate/UC-a96c66d9-1a50-49b7-8453-3f256f1fe1ff/" target="_blank" rel="noopener">Desenvolvimento de Jogos com MonoGame 3.8 e C# — Udemy <span class="cert-year">2026</span></a></li>
+            <li><a href="https://www.udemy.com/certificate/UC-1ddce8c4-7741-4ac0-800c-620e0a7096ad/" target="_blank" rel="noopener">Banco de Dados e SQL — Udemy <span class="cert-year">2025</span></a></li>
+            <li><a href="https://www.udemy.com/certificate/UC-481d2fd6-d874-4815-9ce2-38a953b97e79/" target="_blank" rel="noopener">Algoritmos e Lógica de Programação — Udemy <span class="cert-year">2025</span></a></li>
+            <li><a href="https://www.udemy.com/certificate/UC-72665032-6d8f-4880-84c1-7a65a148af55/" target="_blank" rel="noopener">Macros e VBA no Excel — Udemy <span class="cert-year">2024</span></a></li>
+            <li><a href="https://cursos.alura.com.br/certificate/9afef65c-c705-4407-91ad-4864932d9104" target="_blank" rel="noopener">Git e GitHub: controle de versão — Alura <span class="cert-year">2024</span></a></li>
+            <li><a href="https://www.udemy.com/certificate/UC-b4b8daeb-52a8-4f1c-b4e8-5fe6c76c0c01/" target="_blank" rel="noopener">Delphi 10 — Udemy <span class="cert-year">2023</span></a></li>
+            <li><a href="https://cursos.alura.com.br/certificate/053c6b8f-0f91-45b7-875f-9191a7db33af" target="_blank" rel="noopener">C#: herança e interfaces — Alura <span class="cert-year">2023</span></a></li>
+            <li><a href="https://cursos.alura.com.br/certificate/18942583-7248-46d0-b774-747f83b5111c" target="_blank" rel="noopener">C#: criando bibliotecas em .NET — Alura <span class="cert-year">2022</span></a></li>
+            <li><a href="https://cursos.alura.com.br/certificate/2d6dd522-a2e8-4c4b-9c69-55c9c533edb7" target="_blank" rel="noopener">C#: orientação a objetos — Alura <span class="cert-year">2022</span></a></li>
+            <li><a href="https://cursos.alura.com.br/certificate/44169145-c49c-4c04-92fb-11622114dee7" target="_blank" rel="noopener">C#: explorando a linguagem — Alura <span class="cert-year">2022</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="langs">
+        <h3 data-i18n="edu.langsTitle">Idiomas</h3>
+        <ul class="lang-list">
+          <li>
+            <span class="lang-name" data-i18n="lang.pt">Português</span>
+            <span class="lang-level" data-i18n="lang.ptLevel">Nativo</span>
+          </li>
+          <li>
+            <span class="lang-name" data-i18n="lang.en">Inglês</span>
+            <span class="lang-level" data-i18n="lang.intermediate">Intermediário</span>
+          </li>
+          <li>
+            <span class="lang-name" data-i18n="lang.es">Espanhol</span>
+            <span class="lang-level" data-i18n="lang.intermediate">Intermediário</span>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <footer class="section">
-      <h2>Contato</h2>
-      <p>Email: <a href="mailto:kauan.hb2004@gmail.com">kauan.hb2004@gmail.com</a></p>
-    </footer>
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal contact">
+      <h2 class="section-title"><span class="num">06</span> <span data-i18n="contact.title">Vamos conversar</span></h2>
+      <p class="contact-lead" data-i18n="contact.lead">
+        Aberto a oportunidades remotas e projetos desafiadores. Se meu perfil fizer sentido, me chame.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="mailto:kauan.bertalha@icloud.com">kauan.bertalha@icloud.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/kauanbertalha/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </section>
   </main>
-<script src="script.js"></script>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Kauan Henrique Bertalha · <span data-i18n="footer.built">Feito com HTML, CSS e JavaScript</span></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

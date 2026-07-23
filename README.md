@@ -1,97 +1,61 @@
-# Kauan Henrique Bertalha
+# Kauan Henrique Bertalha — Portfólio
 
-## ✨ Visão Geral
+Portfólio pessoal responsivo e **bilíngue (PT/EN)** de um engenheiro de software back-end,
+feito com **HTML, CSS e JavaScript puro** — sem build, sem dependências, deploy direto no GitHub Pages.
 
-Este é um portfólio web responsivo, minimalista e bilíngue (Português e Inglês), criado com HTML, CSS e JavaScript puro. Foi desenvolvido para apresentar de forma profissional as competências, experiências, formação e projetos de Kauan Henrique Bertalha.
+🔗 **Live:** _(ative o GitHub Pages nas configurações do repositório)_
 
 ---
 
-## 📚 Estrutura de Arquivos
+## ✨ Destaques
+
+- **Single-page bilíngue** — troca de idioma sem duplicar HTML, via dicionário i18n em `script.js`
+- **Dark / Light mode** persistido em `localStorage` (respeita a preferência do sistema no 1º acesso)
+- **Idioma persistido** e detecção automática pelo navegador
+- **Cases reais** — Velo (SaaS full-stack), Alcateia Tecnologia, PowerTrain e outros
+- **SEO + social preview** — meta description e Open Graph tags
+- **Acessibilidade** — skip link, `aria-label`, HTML semântico, `prefers-reduced-motion`
+- **Performance** — foto de perfil otimizada (~25 KB), fontes com `preconnect`
+- **Animações sutis** de scroll com `IntersectionObserver`
+
+---
+
+## 📁 Estrutura
 
 ```
-myPortfolio/
-├── index.html              # Versão em Português
-├── en.html                 # Versão em Inglês
-├── style.css              # Estilização global + dark mode
-├── script.js              # Funções JS para dark mode e troca de idioma
+MyPortfolio/
+├── index.html      # Página única bilíngue (elementos marcados com data-i18n)
+├── en.html         # Redirect legado → index.html (mantém links antigos /en.html)
+├── style.css       # Design system (tokens CSS), dark/light, responsivo
+├── script.js       # i18n PT/EN + tema + idioma persistidos + scroll reveal
 └── img/
-    └── perfil.jpg         # Foto de perfil
-    └── curriculum.pdf     # Currículo para download
-
+    ├── perfil.jpg  # Foto de perfil otimizada
+    └── codeman.png # Favicon
 ```
 
 ---
 
-## 📖 Conteúdo por Página
+## 🌐 Como funciona o bilíngue
 
-### `index.html` (Português)
-
-- **Perfil:** Apresentação pessoal e redes sociais
-- **Objetivo Profissional:** Pretensão de carreira
-- **História Profissional:** Experiência desde os 14 anos
-- **Formação:** Curso de Engenharia de Software na UniCesumar
-- **Cursos:** Certificados com links para validação (Alura/Udemy)
-- **Projetos:** GitHub como vitrine de experiências
-- **Contato:** Email direto
-
-### `en.html` (Inglês)
-
-Mesma estrutura, com tradução completa para o inglês, ideal para aplicações internacionais.
+Cada texto traduzível tem um atributo `data-i18n="chave"`. O `script.js` guarda um dicionário
+com as chaves em `pt-br` e `en`; ao trocar o idioma, ele percorre os elementos e substitui o texto.
+Adicionar um novo texto = adicionar o `data-i18n` no HTML e a chave nos **dois** idiomas.
 
 ---
 
-## 💡 Funcionalidades
+## 🚀 Deploy (GitHub Pages)
 
-### 1. 🌙 Dark Mode
-
-- Ativado por um botão (🌙)
-- Usa `classList.toggle('dark')` no `<body>`
-- Estilos definidos no CSS com `body.dark`
-
-### 2. 🌍 Troca de Idioma
-
-- Botão (🌍) muda entre `index.html` e `en.html`
-- JS detecta e redireciona com `window.location.href`
+1. `Settings → Pages`
+2. Source: branch `main`, pasta `/root`
+3. Salvar — o site fica disponível em `https://berkhz.github.io/MyPortfolio/`
 
 ---
 
-## 💡 Tecnologias Utilizadas
+## 🛠️ Rodar localmente
 
-- **HTML5:** Estrutura semântica
-- **CSS3:** Layout responsivo, dark mode, transições
-- **JavaScript:** Interatividade com dark mode e troca de idioma
-- **Google Fonts:** Poppins (leve e moderna)
+Por usar `fetch`/`localStorage`, abra via servidor (não como `file://`):
 
----
-
-## 🌐 SEO e Acessibilidade
-
-- Uso de `meta name="description"` nas páginas
-- Semântica HTML correta (headings, sections, links externos com `target="_blank"`)
-- Layout responsivo para dispositivos móveis
-
----
-
-## 🛠️ Personalização
-
-Fácil de editar:
-
-- Adicionar projetos
-- Substituir links de certificados
-- Atualizar currículo
-- Alterar idiomas e cores no CSS
-
----
-
-## 📋 Deploy Recomendado
-
-- **GitHub Pages:** Hospedagem gratuita e rápida
-- Basta enviar os arquivos e ativar o GitHub Pages no repositório
-
----
-
-## ✅ Conclusão
-
-Este portfólio é uma representação clara, responsiva e funcional das competências e experiências de Kauan Henrique Bertalha. Ideal tanto para vagas no Brasil quanto no exterior.
-
-Qualquer atualização futura pode ser feita com edição básica de HTML, CSS e JS.
+```bash
+python -m http.server 8000
+# http://localhost:8000
+```
