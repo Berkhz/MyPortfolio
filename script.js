@@ -130,6 +130,8 @@ function applyLang(lang) {
   });
   root.setAttribute('lang', lang);
   document.getElementById('langLabel').textContent = lang === 'en' ? 'PT' : 'EN';
+  const resume = document.getElementById('resumeLink');
+  if (resume) resume.setAttribute('href', lang === 'en' ? 'Kauan_Bertalha_Resume_EN.pdf' : 'Kauan_Bertalha_Curriculo.pdf');
   localStorage.setItem('lang', lang);
 }
 function initLang() {
