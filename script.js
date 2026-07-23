@@ -13,6 +13,7 @@ const I18N = {
     'hero.role': 'Engenheiro de Software · Desenvolvedor Full-stack',
     'hero.lead': 'Desenvolvo aplicações full-stack com base sólida em back-end — C# / .NET, PostgreSQL e Redis — e front-end em React. Atualmente Desenvolvedor Pleno na Benner Sistemas, mirando uma carreira internacional.',
     'hero.ctaProjects': 'Ver projetos', 'hero.ctaContact': 'Entrar em contato',
+    'hero.resume': 'Currículo ↓',
 
     'about.title': 'Sobre mim',
     'about.p1': 'Sou formado em Engenharia de Software pela UniCesumar (diploma em emissão) e desenvolvedor Pleno. Comecei a trabalhar aos 14 anos e nunca parei de aprender — hoje atuo com desenvolvimento de sistemas em produção.',
@@ -61,6 +62,7 @@ const I18N = {
     'hero.role': 'Software Engineer · Full-stack Developer',
     'hero.lead': 'I build full-stack applications on a solid back-end foundation — C# / .NET, PostgreSQL and Redis — with React on the front-end. Currently a Mid-Level Developer at Benner Sistemas, aiming for an international career.',
     'hero.ctaProjects': 'View projects', 'hero.ctaContact': 'Get in touch',
+    'hero.resume': 'Resume ↓',
 
     'about.title': 'About me',
     'about.p1': "I hold a Software Engineering degree from UniCesumar (diploma being issued) and work as a Mid-Level Developer. I started working at 14 and never stopped learning — today I build systems running in production.",
