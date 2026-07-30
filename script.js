@@ -17,7 +17,7 @@ const I18N = {
 
     'about.title': 'Sobre mim',
     'about.p1': 'Sou formado em Engenharia de Software pela UniCesumar (diploma em emissão) e desenvolvedor Pleno. Comecei a trabalhar aos 14 anos e nunca parei de aprender — hoje atuo com desenvolvimento de sistemas em produção.',
-    'about.p2': 'Minha base é o back-end — APIs limpas, banco bem modelado, autenticação segura e deploy automatizado — e venho evoluindo como desenvolvedor full-stack, entregando também o front-end em React. Também fundei a Alcateia Tecnologia, onde desenvolvo produtos próprios de ponta a ponta.',
+    'about.p2': 'Minha base é o back-end — APIs limpas, banco bem modelado, autenticação segura e deploy automatizado — e venho evoluindo como desenvolvedor full-stack, entregando também o front-end em React. Também fundei a Khrawk Labs, onde desenvolvo produtos próprios de ponta a ponta.',
     'about.factYears': 'anos codando', 'about.factStack': 'stack principal', 'about.factProd': 'em produção',
 
     'skills.title': 'Tecnologias',
@@ -27,14 +27,14 @@ const I18N = {
     'exp.title': 'Experiência',
     'exp.bennerRole': 'Desenvolvedor Pleno',
     'exp.bennerDesc': 'Desenvolvimento back-end de sistemas corporativos com C# / .NET e bancos Oracle, aplicando boas práticas de código, versionamento e trabalho em equipe.',
-    'exp.alcateiaRole': 'Fundador & Desenvolvedor',
-    'exp.alcateiaDesc': 'Iniciativa própria de tecnologia onde concebo e desenvolvo produtos de ponta a ponta — da arquitetura ao deploy.',
+    'exp.khrawkRole': 'Fundador & Desenvolvedor',
+    'exp.khrawkDesc': 'Iniciativa própria de tecnologia onde concebo e desenvolvo produtos de ponta a ponta — da arquitetura ao deploy.',
 
     'proj.title': 'Projetos em destaque',
     'proj.veloTag': 'SaaS · Full-stack',
     'proj.veloDesc': 'Plataforma SaaS multi-tenant para gestão de oficinas mecânicas: ordens de serviço, financeiro, controle de caixa, emissão de NFS-e e integração de pagamentos. Arquitetura de produção com deploy automatizado.',
-    'proj.alcateiaTag': 'Produto próprio',
-    'proj.alcateiaDesc': 'Minha empresa de tecnologia — vitrine e base para os produtos que desenvolvo.',
+    'proj.khrawkTag': 'Produto próprio',
+    'proj.khrawkDesc': 'Minha empresa de tecnologia — vitrine e base para os produtos que desenvolvo.',
     'proj.live': 'Site ↗',
     'proj.more': 'Ver todos os repositórios no GitHub ↗',
 
@@ -66,7 +66,7 @@ const I18N = {
 
     'about.title': 'About me',
     'about.p1': "I hold a Software Engineering degree from UniCesumar (diploma being issued) and work as a Mid-Level Developer. I started working at 14 and never stopped learning — today I build systems running in production.",
-    'about.p2': 'My foundation is the back-end — clean APIs, well-modeled databases, secure authentication and automated deployment — and I keep growing as a full-stack developer, also delivering the front-end in React. I also founded Alcateia Tecnologia, where I build my own products end to end.',
+    'about.p2': 'My foundation is the back-end — clean APIs, well-modeled databases, secure authentication and automated deployment — and I keep growing as a full-stack developer, also delivering the front-end in React. I also founded Khrawk Labs, where I build my own products end to end.',
     'about.factYears': 'years coding', 'about.factStack': 'main stack', 'about.factProd': 'in production',
 
     'skills.title': 'Technologies',
@@ -76,14 +76,14 @@ const I18N = {
     'exp.title': 'Experience',
     'exp.bennerRole': 'Mid-Level Developer',
     'exp.bennerDesc': 'Back-end development of enterprise systems with C# / .NET and Oracle databases, applying clean code practices, version control and teamwork.',
-    'exp.alcateiaRole': 'Founder & Developer',
-    'exp.alcateiaDesc': 'My own tech venture where I design and develop products end to end — from architecture to deployment.',
+    'exp.khrawkRole': 'Founder & Developer',
+    'exp.khrawkDesc': 'My own tech venture where I design and develop products end to end — from architecture to deployment.',
 
     'proj.title': 'Featured projects',
     'proj.veloTag': 'SaaS · Full-stack',
     'proj.veloDesc': 'Multi-tenant SaaS platform for auto-repair shop management: service orders, finance, cash control, electronic invoicing (NFS-e) and payment integration. Production architecture with automated deployment.',
-    'proj.alcateiaTag': 'Own product',
-    'proj.alcateiaDesc': 'My technology company — showcase and foundation for the products I build.',
+    'proj.khrawkTag': 'Own product',
+    'proj.khrawkDesc': 'My technology company — showcase and foundation for the products I build.',
     'proj.live': 'Live ↗',
     'proj.more': 'See all repositories on GitHub ↗',
 

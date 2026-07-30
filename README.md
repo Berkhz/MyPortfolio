@@ -12,7 +12,7 @@ feito com **HTML, CSS e JavaScript puro** — sem build, sem dependências, depl
 - **Single-page bilíngue** — troca de idioma sem duplicar HTML, via dicionário i18n em `script.js`
 - **Dark / Light mode** persistido em `localStorage` (respeita a preferência do sistema no 1º acesso)
 - **Idioma persistido** e detecção automática pelo navegador
-- **Cases reais** — Velo (SaaS full-stack), Alcateia Tecnologia, PowerTrain e outros
+- **Cases reais** — Velo (SaaS full-stack), Khrawk Labs, PowerTrain e outros
 - **SEO + social preview** — meta description e Open Graph tags
 - **Acessibilidade** — skip link, `aria-label`, HTML semântico, `prefers-reduced-motion`
 - **Performance** — foto de perfil otimizada (~25 KB), fontes com `preconnect`
